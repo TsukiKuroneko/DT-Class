@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpel CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            background-image: linear-gradient(315deg, #485461 0%, #181d23 74%);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.1); 
+            backdrop-filter: blur(1px); 
+            z-index: 9999; 
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1); 
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+        }
+
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #skills ul li {
+            background-color: rgba(255, 255, 255, 0.1); 
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.gallery img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.gallery p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Steven Harianja</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <img style="height: 150px;" src="anonymous.jpg">
+        <h2>About Me</h2>
+        <p>Nama Saya Steven,Teman Teman Sekalian Bisa Memanggil Saya Tsuki, Saya Sedang Menjalani Pendidikan saya di SMK Krian 1 Sidoarjo, Saya Adalah Pelajar Yang Bersemangat dan Sangat Mudah Untuk Menimba Ilmu Selagi Mengerjakan Project.</p>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>SMK Krian 1 Web Dev</h3>
+            <p>SMK - 2021</p>
+            <p>Saya Mengembangkan UI Pada Website SMK Krian 1 Dan Meng-Update Berita-Berita Terbaru Pada Website SMK Krian 1 </p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>SMK Krian 1 Sidoarjo</h2>
+        <div class="education">
+            <h3>Rekayasa Perangkat Lunak</h3>
+            <p>SMK Krian 1 - 2020</p>
+            <p>Saya bersekolah di SMK Krian 1 Sidoarjo, dan saya sangat merasa nyaman dapat belajar dan bersekolah di SMK Krian 1 Sidoarjo Karena Banyaknya Fasilitas yang bagus dan on point yang disediakan oleh SMK Krian 1 Sidoarjo.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="project2.png" alt="Gallery Image 1">
+                <p>Portofolio 3D Using Three.js</p>
+            </div>
+            <div class="gallery-item">
+                <img src="project1.png" alt="Gallery Image 2">
+                <p>UI/UX For GPT3</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Email: danteharianjaa@gmail.com</p>
+        <p>Phone: 0838-4864-8242</p>
+        <div class="social-media"><a href="https://www.linkedin.com/in/steven-harianja"><img src="linkedin.ico" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/stevenharianjaa"><img src="instagram.ico" alt="Twitter"></a>
+            <a href="https://github.com/TsukiKuroneko"><img src="github.ico" alt="GitHub"></a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Steven</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const sections = document.querySelectorAll('.section');
+
+        function showSections() {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                if (sectionTop < window.innerHeight * 0.8 && sectionBottom > window.innerHeight * 0.2) {
+                    section.classList.add('show');
+                } else {
+                    section.classList.remove('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', showSections);
+    </script>
+</body>
+</html>

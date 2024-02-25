@@ -1,0 +1,75 @@
+body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: "Kode Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.job, .education {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2c3e50; /* Darker blue */
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.section {
+    padding: 50px 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.section.show {
+    opacity: 1;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: auto;
+}
